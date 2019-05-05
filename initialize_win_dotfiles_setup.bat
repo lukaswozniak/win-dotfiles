@@ -1,10 +1,5 @@
 @echo off
 
-set /p linuxuser="Enter linux vm username: "
-set /p linuxpassword="Enter linux vm password: "
-set /p githubuser="Enter github username: "
-set /p githubpassword="Enter github password: "
-
 where choco
 if %errorlevel% neq 0 (
     "%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
