@@ -22,5 +22,6 @@ cd %userprofile%/win-dotfiles
 
 choco install vagrant virtualbox -y
 
+xcopy %userprofile%\win-dotfiles\setup_as_admin.lnk "%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 
-call setup.bat
+shutdown.exe /r /t 00
