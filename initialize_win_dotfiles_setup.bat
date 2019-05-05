@@ -8,6 +8,8 @@ if %errorlevel% neq 0 (
 choco install git /GitOnlyOnPath /NoAutoCrlf /WindowsTerminal /NoShellIntegration -y
 call refreshenv
 git config --global core.autocrlf false
+git config --global user.name "£ukasz Woüniak"
+git config --global user.email "lukas.wozniak@outlook.com"
 choco install openssh curl -y
 
 echo(n|ssh-keygen -t rsa -N "" -f %userprofile%/.ssh/id_rsa
