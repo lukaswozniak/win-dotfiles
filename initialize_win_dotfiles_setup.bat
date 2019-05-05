@@ -6,6 +6,7 @@ if %errorlevel% neq 0 (
 )
 
 choco install git /GitOnlyOnPath /NoAutoCrlf /WindowsTerminal /NoShellIntegration -y
+call refreshenv
 git config --global core.autocrlf false
 choco install openssh curl -y
 
@@ -18,5 +19,8 @@ ssh -T git@github.com
 
 git clone git@github.com:lukaswozniak/win-dotfiles.git %userprofile%/win-dotfiles
 cd %userprofile%/win-dotfiles
+
+choco install vagrant virtualbox -y
+
 
 call setup.bat
