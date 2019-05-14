@@ -1,0 +1,3 @@
+#SingleInstance Force
+
+Capslock::Esc

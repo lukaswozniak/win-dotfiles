@@ -1,6 +1,6 @@
 @echo off
+call "%userprofile%\win-dotfiles\elevate.bat" %~0
+if %errorlevel% == 1 exit /b
 
-xcopy /s/e/y "%userprofile%/win-dotfiles/shortcuts" "%userprofile%/AppData/Roaming/Microsoft/Windows/Start Menu/Programs"
-
-choco install autohotkey -y
-forfiles /p %userprofile%\win-dotfiles\shortcuts\Startup /m *.ahk /c "cmd /c start \"\" @path"
+forfiles /p "%userprofile%\win-dotfiles\shortcuts" /c "cmd /c cd \"%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\" & mklink @file @path"
+forfiles /p "%userprofile%\win-dotfiles\startup" /c "cmd /c cd \"%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\" & mklink @file @path & if @ext == \"bat\" (cmd /c @path) else (start \"\" @path)"
