@@ -43,6 +43,15 @@ if not exist "C:\Program Files\AutoHotkey" (
 	"%userprofile%\win-dotfiles\downloads\ahk-install.exe"
 )
 
+rem Install StartIsBack
+if not exist "C:\Program Files (x86)\StartIsBack" (
+    if not exist "%userprofile%\win-dotfiles\downloads\startisback.exe" (
+        echo "Downloading StartIsBack..."
+        "%userprofile%\win-dotfiles\bin\wget" -O "%userprofile%\win-dotfiles\downloads\startisback.exe" "https://s3.amazonaws.com/startisback/StartIsBackPlusPlus_setup.exe"
+    )
+    "%userprofile%\win-dotfiles\downloads\startisback.exe"
+)
+
 if %need_reboot% equ true (
 	call "%userprofile%/win-dotfiles/reboot_and_continue.bat"
 )
