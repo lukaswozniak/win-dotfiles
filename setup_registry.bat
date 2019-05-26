@@ -1,4 +1,6 @@
 @echo off
+call "%userprofile%\win-dotfiles\elevate.bat" %~0
+if %errorlevel% == 1 exit /b
 
 rem System tray expanded
 reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer /f /t REG_DWORD /v EnableAutoTray /d 0

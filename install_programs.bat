@@ -52,6 +52,16 @@ if not exist "C:\Program Files (x86)\StartIsBack" (
     "%userprofile%\win-dotfiles\downloads\startisback.exe"
 )
 
+rem Install PuTTY
+if not exist "C:\Program Files\PuTTY" (
+    if not exist "%userprofile%\win-dotfiles\downloads\putty.msi" (
+        echo "Downloading PuTTY..."
+        "%userprofile%\win-dotfiles\bin\wget" -O "%userprofile%\win-dotfiles\downloads\putty.msi" "https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.71-installer.msi"
+    )
+    "%userprofile%\win-dotfiles\downloads\putty.msi"
+)
+call "configure_putty_profile.bat"
+
 if %need_reboot% equ true (
 	call "%userprofile%/win-dotfiles/reboot_and_continue.bat"
 )
