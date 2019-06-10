@@ -1,5 +1,12 @@
 ## Introduction
-This script installs needed applications and configures Windows 10 for my typical workflow, including setup and integration of linux vm in VirtualBox.
+This script configures Windows 10 for my typical workflow, including configuration of some programs.
+
+## Prerequisites
+These programs are assumed to be already installed:
+  * Git
+  * PuTTY
+  * AutoHotkey
+[Chocolatey](https://chocolatey.org/install) could be used with following command: `choco install git putty autohotkey -y`
 
 ## Installation
-Install [git](https://git-scm.com/download/win), and checkout the repository. Then run `setup.bat` file and follow instructions, the script expects programs to be installed in default locations. You need to install X Server manually.
+Checkout the repository, then run `setup.bat` file and follow instructions, the script expects programs to be installed in default locations.

@@ -1,3 +1,0 @@
-[submodule "submodules/vagrant"]
-	path = submodules/vagrant
-	url = https://github.com/lukaswozniak/vagrant.git
