@@ -2,7 +2,7 @@
 This script configures Windows 10 for my typical workflow, including configuration of some programs.
 
 ## Prerequisites
-These programs are assumed to be already installed:
+You should checkout this repo to your home directory `%USERPROFILE%\win-dotfiles`, and have ssh key generated at `%USERPROFILE%\.ssh\id_rsa.pub`. These programs are assumed to be already installed:
   * Git
   * PuTTY
   * AutoHotkey
