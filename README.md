@@ -6,6 +6,7 @@ These programs are assumed to be already installed:
   * Git
   * PuTTY
   * AutoHotkey
+
 [Chocolatey](https://chocolatey.org/install) could be used with following command: `choco install git putty autohotkey -y`
 
 ## Installation
