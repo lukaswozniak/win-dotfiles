@@ -1,4 +1,4 @@
 @echo off
 
-cd %userprofile%/vagrant
+cd %userprofile%/win-dotfiles/submodules/vagrant
 vagrant halt
