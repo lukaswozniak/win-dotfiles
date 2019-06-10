@@ -11,3 +11,6 @@ You should checkout this repo to your home directory `%USERPROFILE%\win-dotfiles
 
 ## Installation
 Checkout the repository, then run `setup.bat` file and follow instructions, the script expects programs to be installed in default locations.
+
+## Recommended programs
+  * [StartIsBack](https://startisback.com/#download-tab)
