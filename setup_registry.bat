@@ -13,3 +13,6 @@ reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation 
 
 rem Show file extensions
 reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /f /t REG_DWORD /v HideFileExt /d 0
+
+rem Hide People icon
+reg add HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People /f /t REG_DWORD /v PeopleBand /d 0
