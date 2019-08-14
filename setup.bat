@@ -2,7 +2,7 @@
 call "%userprofile%\win-dotfiles\elevate.bat" %~0
 if %errorlevel% == 1 exit /b
 
-git config --global core.autocrlf false
+git config --global core.autocrlf true
 git config --global user.name "Lukasz Wozniak"
 git config --global user.email "lukas.wozniak@outlook.com"
 
