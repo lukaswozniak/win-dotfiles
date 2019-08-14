@@ -24,5 +24,7 @@ rem Turn off fast startup
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /f /t REG_DWORD /v HiberbootEnabled /d 0
 
 rem Show search icon
-reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search /t REG_DWORD /v SearchboxTaskbarMode /d 1
+reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search /f /t REG_DWORD /v SearchboxTaskbarMode /d 1
 
+rem Small taskbar buttons
+reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /f /t REG_DWORD /v TaskbarSmallIcons /d 1
