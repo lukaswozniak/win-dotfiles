@@ -28,3 +28,6 @@ reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search /f /t
 
 rem Small taskbar buttons
 reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /f /t REG_DWORD /v TaskbarSmallIcons /d 1
+
+rem Show taskbar buttons where window is open
+reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /f /t REG_DWORD /v MMTaskbarMode /d 2
