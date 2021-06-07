@@ -34,3 +34,6 @@ reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Adv
 
 rem Hide Cortana Button
 reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /f /t REG_DWORD /v ShowCortanaButton /d 0
+
+rem Hide Meet Now Button
+reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /f /t REG_DWORD /v HideSCAMeetNow /d 1
